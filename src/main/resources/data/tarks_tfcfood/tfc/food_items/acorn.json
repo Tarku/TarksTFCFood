@@ -1,0 +1,13 @@
+{
+  "__comment__": "This file was NOT automatically created by mcresources",
+  "ingredient": {
+    "item": "tarks_tfcfood:item/acorn"
+  },
+  "category": "fruit",
+  "hunger": 0.4,
+  "saturation": 0,
+  "decay_modifier": 0.1,
+  "protein": 0.1,
+  "fruit": 0.4,
+  "grain": 0.5
+}

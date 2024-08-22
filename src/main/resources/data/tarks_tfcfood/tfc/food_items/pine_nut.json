@@ -1,0 +1,13 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "ingredient": {
+    "item": "tarks_tfcfood:item/hickory_nut"
+  },
+  "category": "fruit",
+  "hunger": 1,
+  "saturation": 0.25,
+  "decay_modifier": 0.1,
+  "protein": 0.3,
+  "fruit": 0.3,
+  "grain": 0.2
+}
