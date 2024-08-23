@@ -23,14 +23,12 @@ public class TarksTFCFoodAddon
     public static final String MODID = "tarks_tfcfood";
     // Directly reference a slf4j logger
     public static final Logger LOGGER = LogUtils.getLogger();
-
     public TarksTFCFoodAddon()
     {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
         modEventBus.addListener(this::commonSetup);
 
-        ModItems.registerAllFoods();
 
         ModItems.ITEMS.register(modEventBus);
         MinecraftForge.EVENT_BUS.register(this);

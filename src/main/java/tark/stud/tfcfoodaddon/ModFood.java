@@ -22,30 +22,15 @@ import java.util.function.Supplier;
 
 public class ModFood extends Item
 {
-    public static ArrayList<ModFood> AllFoods = new ArrayList<>();
-
-    public static ModFood CHESTNUT = new ModFood("chestnut", 1, true);
-    public static ModFood ROASTED_CHESTNUT = new ModFood("roasted_chestnut", 5, false);
-    public static ModFood ACORN = new ModFood("acorn", 1, true);
-    public static ModFood ROASTED_ACORN = new ModFood("roasted_acorn", 5, false);
-    public static ModFood HICKORY_NUT = new ModFood("hickory_nut", 4, false);
-    public static ModFood PINE_NUT = new ModFood("pine_nut", 4, false);
-
-    public String id;
     private final Boolean poison;
-    private final int nutrition;
 
-    ModFood(String id, int nutritionValue, Boolean isPoison)
+    ModFood(Boolean isPoison)
     {
 
         super(new Item.Properties());
 
-        this.id = id;
 
         poison = isPoison;
-        nutrition = nutritionValue;
-
-        AllFoods.add(this);
     }
 
     public FoodProperties getModFoodProperties()
@@ -63,7 +48,7 @@ public class ModFood extends Item
             builder.effect(supplierPoison, 1f);
         }
 
-        return builder.nutrition(nutrition).saturationMod(0.3f).build();
+        return builder.nutrition(0).saturationMod(0.3f).build();
     }
 
     public Item.Properties getItemProperties()
